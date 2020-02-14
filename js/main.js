@@ -23,9 +23,11 @@ function calcularMedia() {
         }
 
     }
+    ativaBotao();
 };
 
 window.onload = calcularMedia();
+
 
 
 
@@ -60,7 +62,7 @@ function adicionarAluno() {
         var tdBotao = document.createElement("td");
 
         //criando botao de exclusao
-        var botaoRemover = document.createElement("button");
+        var botaoRemover = document.createElement('button');
 
 
         // criando os elementos P para inserir na TD
@@ -79,7 +81,8 @@ function adicionarAluno() {
         pSituacao.className = "situacao";
         trNova.className = "tr";
         botaoRemover.className = "botao-remover btn btn-outline-danger btn-sm";
-        botaoRemover.addEventListener("click", excluirLinha);
+        botaoRemover.type = "submit";
+        botaoRemover.id = "botaoRemover";
 
         // adicionando valores como filhos dos seus elementos HTML
         pNome.appendChild(document.createTextNode(inputNome));
@@ -89,6 +92,7 @@ function adicionarAluno() {
         pMedia.appendChild(document.createTextNode("Pendente"));
         pSituacao.appendChild(document.createTextNode("Pendente"));
         botaoRemover.appendChild(document.createTextNode("X"));
+
 
         // adicionando como filho da TR os TDs de cada linha, e dentro desses TDs adicionando os P
         // com os valores passados acima
@@ -154,8 +158,12 @@ function mudaCor(event) {
 
 }
 
-function excluirLinha(elemento) {
-        elemento.parentNode.parentNode.remove(elemento);
- 
+function ativaBotao() {
+    var getBotao = document.querySelectorAll("#botaoRemover");
+    for (let index = 0; index < getBotao.length; index++) {
+        getBotao[index].addEventListener("click", function () {
+            this.parentNode.parentNode.remove();
+        }, false)
 
+    }
 }

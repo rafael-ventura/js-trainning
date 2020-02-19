@@ -1,8 +1,7 @@
 
-
-/*
-funcao que CALCULA A MEDIA DE TODOS OS ALUNOS BASEADO NA N1,N2 E N3
-RETORNANDO A SITUACAO (APROVADO/REPROVADO)
+window.onload = calcularMedia();
+/*  funcao que CALCULA A MEDIA DE TODOS OS ALUNOS BASEADO NA N1,N2 E N3
+    RETORNANDO A SITUACAO (APROVADO/REPROVADO)
 */
 function calcularMedia() {
     var n1 = document.getElementsByClassName("n1");
@@ -25,15 +24,8 @@ function calcularMedia() {
     }
     ativaBotao();
 };
-
-window.onload = calcularMedia();
-
-
-
-
-/*
-funcao que ADICIONA NOVA LINHA DE ALUNOS, JA ENTREGANDO OS VALORES CALCULADOS 
-NA FUNCAO CALCULAMEDIA
+/*  funcao que ADICIONA NOVA LINHA DE ALUNOS, JA ENTREGANDO OS VALORES CALCULADOS 
+    NA FUNCAO CALCULAMEDIA
 */
 function adicionarAluno() {
 

@@ -1,5 +1,5 @@
 # js-trainning
-A JavaScript project just to play with and remember some concepts 
+*A JavaScript project just to play with and remember some concepts *
 
 ## Table 
 *I created a table with school grades, putting on options to exclude a student grades from table.

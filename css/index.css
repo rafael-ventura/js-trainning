@@ -40,4 +40,11 @@ input[type="text"]{
     border-color: inherit;
     text-align: center;
   }
-
+  #appSummary{
+    justify-content:center;
+}
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}

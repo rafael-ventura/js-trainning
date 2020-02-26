@@ -12,108 +12,153 @@
 </head>
 
 <body>
-
     <div class="container">
-        <h1>Treinando Tabelas e Formularios</h1>
-
-        <table class="table table-hover table-responsive-md table-striped table-dark">
-            <thead>
-                <tr class="text-center">
-                    <th scope="col">Alunos</th>
-                    <th scope="col">Nota 1</th>
-                    <th scope="col">Nota 2</th>
-                    <th scope="col">Nota 3</th>
-                    <th scope="col" class="text-center">Media</th>
-                    <th scope="col">Situação</th>
-                    <th> </th>
-                </tr>
-            </thead>
-            <tbody id="corpotable">
-                <tr id="aluno1" class="text-center">
-                    <td>
-                        <p> Luis </p>
-                    </td>
-                    <td>
-                        <p class="n1">6.0</p>
-                    </td>
-                    <td>
-                        <p class="n2">8.0</p>
-                    </td>
-                    <td>
-                        <p class="n3">9.0</p>
-                    </td>
-                    <td>
-                        <p class="media"> Pendente </p>
-                    </td>
-                    <td>
-                        <p class="situacao"> Pendente </p>
-                    </td>
-                    <td>
-                        <button class="botao-remover btn btn-outline-danger btn-sm" type="submit"
-                            id="botaoRemover">X</button>
-                    </td>
-                </tr>
-                <tr id="aluno2" class="tr">
-                    <td>
-                        <p> Carlos </p>
-                    </td>
-                    <td>
-                        <p class="n1">10.0</p>
-                    </td>
-                    <td>
-                        <p class="n2">4.5</p>
-                    </td>
-                    <td>
-                        <p class="n3">5.7</p>
-                    </td>
-                    <td>
-                        <p class="media"> Pendente </p>
-                    </td>
-                    <td>
-                        <p class="situacao"> Pendente </p>
-                    </td>
-                    <td>
-                        <button class="botao-remover btn btn-outline-danger btn-sm" type="submit"
-                            id="botaoRemover">X</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <h1>Treinando Tabelas e Formularios</h1>
+            <table class="table table-hover table-responsive-md table-striped table-dark">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">Alunos</th>
+                        <th scope="col">Nota 1</th>
+                        <th scope="col">Nota 2</th>
+                        <th scope="col">Nota 3</th>
+                        <th scope="col" class="text-center">Media</th>
+                        <th scope="col">Situação</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="corpotable">
+                    <tr id="aluno1" class="text-center">
+                        <td>
+                            <p> Luis </p>
+                        </td>
+                        <td>
+                            <p class="n1">6.0</p>
+                        </td>
+                        <td>
+                            <p class="n2">8.0</p>
+                        </td>
+                        <td>
+                            <p class="n3">9.0</p>
+                        </td>
+                        <td>
+                            <p class="media"> Pendente </p>
+                        </td>
+                        <td>
+                            <p class="situacao"> Pendente </p>
+                        </td>
+                        <td>
+                            <button class="botao-remover btn btn-outline-danger btn-sm" type="submit"
+                                id="botaoRemover">X</button>
+                        </td>
+                    </tr>
+                    <tr id="aluno2" class="tr">
+                        <td>
+                            <p> Carlos </p>
+                        </td>
+                        <td>
+                            <p class="n1">10.0</p>
+                        </td>
+                        <td>
+                            <p class="n2">4.5</p>
+                        </td>
+                        <td>
+                            <p class="n3">5.7</p>
+                        </td>
+                        <td>
+                            <p class="media"> Pendente </p>
+                        </td>
+                        <td>
+                            <p class="situacao"> Pendente </p>
+                        </td>
+                        <td>
+                            <button class="botao-remover btn btn-outline-danger btn-sm" type="submit"
+                                id="botaoRemover">X</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <br>
 
-
-        <div class="container">
-            <form autocomplete="off">
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="name">Digite o nome:</label>
+        <form autocomplete="off" class="justify-content-center">
+            <div class="row">
+                <div class="form-group col">
+                    <label class="control-label" for="name">Digite o nome:</label>
                     <input type="text" id="nomeForm" size="20" placeholder="Nome" class="form-control">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="n1">Digite N1:</label>
+                <div class="form-group col">
+                    <label class="control-label" for="n1">Digite N1:</label>
                     <input id="n1Form" type="number" name="n1" min="0" max="10" step="0.1" placeholder="Nota 1"
                         class="form-control">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="n2">Digite N2:</label>
+                <div class="w-100"></div>
+                <div class="form-group col">
+                    <label class="control-label" for="n2">Digite N2:</label>
                     <input id="n2Form" type="number" name="n2" min="0" max="10" placeholder="Nota 2"
                         class="form-control">
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2" for="n3">Digite N3:</label>
+                <div class="form-group col">
+                    <label class="control-label" for="n3">Digite N3:</label>
                     <input id="n3Form" type="number" name="n3" min="0" max="10" placeholder="Nota 3"
                         class="form-control">
                 </div>
+            </div>
+            <div class="row">
+                <div class=" col-md-3 ">
+                    <input type="button" value="Adicionar Aluno" onclick="adicionarAluno()"
+                        class="btn btn-primary btn-block text-left">
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-md-2 flex-fill">
+                    <label for="cor" class="example-color-input">Mudar a cor do fundo</label>
+                </div>
+                <div class=" col-md-2">
+                    <input type="color" id="corForm" name="cor" onchange="mudaCor(event)" class="btn-md">
+                </div>
+            </div>
 
+            <br>
+            <br>
 
-                <input type="button" value="Adicionar Aluno" onclick="adicionarAluno()"
-                    class="btn btn-primary btn-block">
-                <label for="cor" class="example-color-input">Mudar a cor do fundo</label>
-                <input type="color" id="corForm" name="cor" onchange="mudaCor(event)" class="form-control">
-                <button type="button" class="btn btn-info btn-sm"
-                    onclick='(function(){window.location.href ="https://www.bbc.com/portuguese"}())'> BBC </button>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-block btn btn-success btn-sm"
+                        onclick='(function(){window.location.assign("https://www.bbc.com/portuguese")}())'> BBC
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-block btn btn-dark btn-sm"
+                        onclick='(function(){window.location.assign("https://www.redebrasilatual.com.br/")}())'>
+                        Rede
+                        Brasil
+                        Atual </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-block btn btn-warning btn-sm"
+                        onclick='(function(){window.location.assign("https://www.cartacapital.com.br/")}())'> Carta
+                        Capital
+                    </button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn-block btn btn-info btn-sm"
+                        onclick='(function(){window.location.assign("https://brasil.elpais.com/tag/brasil")}())'> El
+                        País
+                    </button>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class=" col">
+                    <button type="button" class="btn-block btn btn-secondary"
+                        onclick='(function(){window.location.assign("portifolio.html")}())'> Meu Portifólio
+                    </button>
+                </div>
+            </div>
 
-            </form>
-        </div>
+        </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

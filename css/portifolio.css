@@ -3,3 +3,23 @@ body{
 	font-family: sans-serif;
 	color: #333;
 }
+.carousel-inner > .item > img {
+	margin: 0 auto;
+  }
+  .carousel-inner img {
+	margin: auto;
+  }
+  .carousel-inner{
+	width:100%;
+	max-height: 400px !important;
+	max-width: 550px  !important;
+  }
+.descript {
+	font-size: 9px ;
+}
+.carousel-caption {
+    
+    text-align: center;
+	top: auto;
+    bottom: -6%;
+}

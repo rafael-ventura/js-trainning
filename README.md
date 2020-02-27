@@ -13,7 +13,7 @@ The average is calculeted automatically in JS.*
 *In the bottom has some links to random newspapers that a like and read every week.*
 
 ## Quiz
-[TO BE CONTINUED]
+*It´s a simple quiz game with questions and answers already chose.*
 
 ## Portfolio
 [TO BE CONTINUED]

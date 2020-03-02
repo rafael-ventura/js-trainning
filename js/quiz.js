@@ -1,21 +1,21 @@
 var myQuestions = [
     {
-        question: "What is 10/2?",
+        question: "Quem escreveu Cândido (1759)?",
         answers: {
-            a: '3',
-            b: '5',
-            c: '115'
+            a: 'David Hume',
+            b: 'Voltaire',
+            c: 'Aristoteles'
         },
         correctAnswer: 'b'
     },
     {
-        question: "What is 30/3?",
+        question: "Que dia voltarei as aulas? ",
         answers: {
-            a: '3',
-            b: '5',
-            c: '10'
+            a: '9/3',
+            b: '5/3',
+            c: '2/3'
         },
-        correctAnswer: 'c'
+        correctAnswer: 'a'
     },
     {
         question: "Nome do político de esquerda que assumiu a presidência do Brasil em 2002 e foi eleito o melhor presidente do país até então?",

@@ -111,11 +111,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class=" col-md-2 flex-fill">
-                    <label for="cor" class="example-color-input">Mudar a cor do fundo</label>
-                </div>
                 <div class=" col-md-2">
-                    <input type="color" id="corForm" name="cor" onchange="mudaCor(event)" class="btn-md">
+                    <span class="badge badge-dark text-center" id="badge">Mudar a cor</span>
+                </div>
+                <div class=" col-md-1">
+                    <input type="color" id="corForm" name="cor" onchange="mudaCor(event)" class="btn-md color-input btn-block">
                 </div>
             </div>
 
@@ -147,9 +147,14 @@
                         País
                     </button>
                 </div>
+                <div class="col">
+                    <button type="button" class="btn-block btn btn-danger btn-sm"
+                        onclick='(function(){window.location.assign("https://piaui.folha.uol.com.br/")}())'> Piauí
+                    </button>
+                </div>
             </div>
             <br>
-            
+
             <div class="row">
                 <div class=" col">
                     <button type="button" class="btn-block btn btn-secondary"
